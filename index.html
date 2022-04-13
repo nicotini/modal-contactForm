@@ -27,8 +27,24 @@
                         <span class="modal-window__close">&times</span>
                     </div>
                     <div class="modal-body">
-                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, culpa.</p>
-                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, culpa.</p>
+                        <form action="" method="post" class="modal-form">
+                            <div class="modal-form__group-elem">
+                                <label for="name">Name</label>
+                                <input id="name" type="text" class="modal-input" placeholder="your name">
+                            </div>
+                            <div class="modal-form__group-elem">
+                                 <label for=email">Email</label>
+                                 <input id="email" type="email" class="modal-input" placeholder="your email">
+                             </div>
+                             <div class="modal-form__group-elem">
+                                 <label for="message">Message</label>
+                                 <textarea name="message" id="message" class="modal-textarea" cols="30" rows="10" placeholder="put your message here"></textarea>
+                             </div>
+                             <div class="modal-button">
+                                 <button type="submit">Send</button>
+                             </div>
+                            
+                        </form>
                     </div>
                     <div class="modal-footer">
                         <button class="modal-footer__cancel">Cancel</button>
