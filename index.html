@@ -27,21 +27,21 @@
                         <span class="modal-window__close">&times</span>
                     </div>
                     <div class="modal-body">
-                        <form action="" method="post" class="modal-form">
+                        <form action="sendmail.php" method="post" class="modal-form" id="form">
                             <div class="modal-form__group-elem">
                                 <label for="name">Name</label>
-                                <input id="name" type="text" class="modal-input" placeholder="your name">
+                                <input id="name" name="name" type="text" class="modal-input _req" placeholder="your name">
                             </div>
                             <div class="modal-form__group-elem">
                                  <label for=email">Email</label>
-                                 <input id="email" type="email" class="modal-input" placeholder="your email">
+                                 <input id="email" type="email" name="email" class="modal-input _req _email" placeholder="your email">
                              </div>
                              <div class="modal-form__group-elem">
                                  <label for="message">Message</label>
-                                 <textarea name="message" id="message" class="modal-textarea" cols="30" rows="10" placeholder="put your message here"></textarea>
+                                 <textarea name="message" id="message" class="modal-textarea _req" cols="30" rows="10" placeholder="put your message here"></textarea>
                              </div>
                              <div class="modal-button">
-                                 <button type="submit">Send</button>
+                                 <button id="sendMail" type="submit">Send</button>
                              </div>
                             
                         </form>
@@ -55,7 +55,8 @@
         </div>
 
     </div>
+    
+    <script src="js/formMail.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/main.js"></script>
 </body>
 </html>
